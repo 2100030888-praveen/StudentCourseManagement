@@ -1,0 +1,172 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hello{
+  position: absolute;
+  height:auto;
+  left:-7px; 
+  top:6px;       
+  width:84px;
+}
+
+
+nav {
+	position: fixed;
+	top:0px;
+	left:0px;
+  margin:0 auto;
+  width:100%;
+  height:auto;
+  display:inline-block;
+  padding: 10px 16px;
+  background:rgb(0, 0, 0);
+}
+
+nav ul {
+  margin:0;padding:0;
+  list-style-type:none;
+  float:right;
+  display:inline-block;
+}
+
+nav ul li {
+  position:relative;
+  margin:0 20px 0 0;
+  float:left;
+  display:inline-block;
+}
+
+li > a:after { content: ' »'; } /* Change this in order to change the Dropdown symbol */
+
+li > a:only-child:after { content: ''; }
+
+nav ul li a {
+  padding:20px;
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  opacity:0.5;
+}
+
+nav ul li ul {
+  display:none;
+  position:absolute;
+  left:0;
+  background:rgb(0, 0, 0);
+  float:left;
+}
+
+nav ul li ul li {
+  width:100%;
+  border-bottom:1px solid rgba(255,255,255,.3);
+}
+
+nav ul li:hover ul {
+  display:block;
+}
+
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+nav button{
+    display: flex;
+    color: white;
+    background-color: #333;
+    position: absolute;
+    text-align: center;
+    padding: 10px 16px;
+    
+}
+
+nav button:hover{
+        -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+.jello-horizontal:hover {
+-webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+  border-radius: 30px;
+}
+@-webkit-keyframes jello-horizontal {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+30% {
+-webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+}
+40% {
+-webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+}
+50% {
+-webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+}
+65% {
+-webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+}
+75% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+}
+100% {
+-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+}
+@keyframes jello-horizontal {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+30% {
+-webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+}
+40% {
+-webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+}
+50% {
+-webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+}
+65% {
+-webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+}
+75% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+}
+100% {
+-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+}
+
+/* footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  color: white;
+  position: fixed;
+
+bottom: 0;
+left: 0;
+width: 100%;
+height: 40%;
+} */
